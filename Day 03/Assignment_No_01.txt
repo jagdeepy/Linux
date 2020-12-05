@@ -1,0 +1,39 @@
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~$ cd Desktop
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~/Desktop$ ls
+ index8.jpeg
+ index.png
+ mar.txt
+ out.tiff
+ Python
+ pythonlearn.pdf
+ Research_Topics
+'Screenshot from 2017-12-04 17-09-21.png'
+'Screenshot from 2017-12-04 17-09-43.png'
+ SEM_3.ppt
+ Soils.csv
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~/Desktop$ cd LetsUpgrade/
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~/Desktop/LetsUpgrade$ cd Linux
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~/Desktop/LetsUpgrade/Linux$ cat >myfile
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~/Desktop/LetsUpgrade/Linux$ ls
+myfile
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~/Desktop/LetsUpgrade/Linux$ ls -l
+total 0
+-rw-r--r-- 1 jagdeep jagdeep 0 Dec  5 16:05 myfile
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~/Desktop/LetsUpgrade/Linux$ file myfile
+myfile: empty
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~/Desktop/LetsUpgrade/Linux$ vi myfile 
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~/Desktop/LetsUpgrade/Linux$ vi myfile 
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~/Desktop/LetsUpgrade/Linux$ vi myfile 
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~/Desktop/LetsUpgrade/Linux$ vi myfile 
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~/Desktop/LetsUpgrade/Linux$ vi myfile 
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~/Desktop/LetsUpgrade/Linux$ vi myfile 
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~/Desktop/LetsUpgrade/Linux$ cat myfile
+Jagdeep Yadav
+Andheri East, Mumbai
+jagdeepshiv@gmail.com
+9920914855
+O+ve
+
+
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~/Desktop/LetsUpgrade/Linux$ 
+
