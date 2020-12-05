@@ -1,0 +1,148 @@
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.8G     0  1.8G   0% /dev
+tmpfs           373M  3.3M  370M   1% /run
+/dev/sda6       229G  103G  115G  48% /
+tmpfs           1.9G   90M  1.8G   5% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           1.9G     0  1.9G   0% /sys/fs/cgroup
+/dev/loop2       98M   98M     0 100% /snap/core/10444
+/dev/loop3      147M  147M     0 100% /snap/code/50
+/dev/loop0       98M   98M     0 100% /snap/core/10185
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop5       56M   56M     0 100% /snap/core18/1885
+/dev/loop4      538M  538M     0 100% /snap/pycharm-professional/226
+/dev/loop6      143M  143M     0 100% /snap/code/49
+/dev/loop7      458M  458M     0 100% /snap/pycharm-professional/223
+tmpfs           373M   24K  373M   1% /run/user/123
+tmpfs           373M   52K  373M   1% /run/user/1000
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~$ fdfisk -l
+
+Command 'fdfisk' not found, did you mean:
+
+  command 'fdisk' from deb fdisk (2.34-0.1ubuntu9.1)
+
+Try: sudo apt install <deb name>
+
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~$ fdisk -l
+fdisk: cannot open /dev/loop0: Permission denied
+fdisk: cannot open /dev/loop1: Permission denied
+fdisk: cannot open /dev/loop2: Permission denied
+fdisk: cannot open /dev/loop3: Permission denied
+fdisk: cannot open /dev/loop4: Permission denied
+fdisk: cannot open /dev/loop5: Permission denied
+fdisk: cannot open /dev/loop6: Permission denied
+fdisk: cannot open /dev/loop7: Permission denied
+fdisk: cannot open /dev/sda: Permission denied
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~$ sudo fdisk -l
+[sudo] password for jagdeep: 
+Disk /dev/loop0: 97.8 MiB, 102486016 bytes, 200168 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop1: 55.4 MiB, 58052608 bytes, 113384 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop2: 97.9 MiB, 102612992 bytes, 200416 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop3: 146 MiB, 153096192 bytes, 299016 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop4: 537.7 MiB, 563752960 bytes, 1101080 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop5: 55.3 MiB, 58007552 bytes, 113296 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop6: 142.3 MiB, 149221376 bytes, 291448 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop7: 457.6 MiB, 479830016 bytes, 937168 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/sda: 465.8 GiB, 500107862016 bytes, 976773168 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: dos
+Disk identifier: 0xd6560506
+
+Device     Boot     Start       End   Sectors   Size Id Type
+/dev/sda1  *         2048    206847    204800   100M  7 HPFS/NTFS/exFAT
+/dev/sda2          206848 488386559 488179712 232.8G  7 HPFS/NTFS/exFAT
+/dev/sda3       488388606 976771071 488382466 232.9G  5 Extended
+/dev/sda5       488388608 489371647    983040   480M 82 Linux swap / Solaris
+/dev/sda6       489373696 976771071 487397376 232.4G 83 Linux
+
+Partition 3 does not start on physical sector boundary.
+
+
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~$ df
+Filesystem     1K-blocks      Used Available Use% Mounted on
+udev             1867792         0   1867792   0% /dev
+tmpfs             381676      3360    378316   1% /run
+/dev/sda6      239742496 107609944 119931236  48% /
+tmpfs            1908364     92140   1816224   5% /dev/shm
+tmpfs               5120         4      5116   1% /run/lock
+tmpfs            1908364         0   1908364   0% /sys/fs/cgroup
+/dev/loop2        100224    100224         0 100% /snap/core/10444
+/dev/loop3        149632    149632         0 100% /snap/code/50
+/dev/loop0        100096    100096         0 100% /snap/core/10185
+/dev/loop1         56704     56704         0 100% /snap/core18/1932
+/dev/loop5         56704     56704         0 100% /snap/core18/1885
+/dev/loop4        550656    550656         0 100% /snap/pycharm-professional/226
+/dev/loop6        145792    145792         0 100% /snap/code/49
+/dev/loop7        468608    468608         0 100% /snap/pycharm-professional/223
+tmpfs             381672        24    381648   1% /run/user/123
+tmpfs             381672        52    381620   1% /run/user/1000
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.8G     0  1.8G   0% /dev
+tmpfs           373M  3.3M  370M   1% /run
+/dev/sda6       229G  103G  115G  48% /
+tmpfs           1.9G   90M  1.8G   5% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           1.9G     0  1.9G   0% /sys/fs/cgroup
+/dev/loop2       98M   98M     0 100% /snap/core/10444
+/dev/loop3      147M  147M     0 100% /snap/code/50
+/dev/loop0       98M   98M     0 100% /snap/core/10185
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop5       56M   56M     0 100% /snap/core18/1885
+/dev/loop4      538M  538M     0 100% /snap/pycharm-professional/226
+/dev/loop6      143M  143M     0 100% /snap/code/49
+/dev/loop7      458M  458M     0 100% /snap/pycharm-professional/223
+tmpfs           373M   24K  373M   1% /run/user/123
+tmpfs           373M   52K  373M   1% /run/user/1000
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~$ df -h /
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda6       229G  103G  115G  48% /
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~$ df -ht ext4
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda6       229G  103G  115G  48% /
+(base) jagdeep@jagdeep-HP-630-Notebook-PC:~$ sudo du -hs
+81G	.
+
